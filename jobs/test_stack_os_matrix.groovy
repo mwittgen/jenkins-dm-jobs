@@ -18,8 +18,6 @@ p.pipeline().with {
     stringParam('RUBINENV_BRANCH', null, 'Branch to test in the rubinenv-feedstock fork.')
   }
 
-  concurrentBuild(true)
-
   environmentVariables(
     BUILD_CONFIG: 'scipipe-lsstsw-matrix',
     WIPEOUT: false,
